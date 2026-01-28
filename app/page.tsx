@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input"
 import { Field, FieldDescription, FieldLabel } from "@/components/ui/field"
@@ -29,7 +30,9 @@ export default function Home() {
               <Input id="input-password" type="password" placeholder="Enter your password" />
             </Field>
           <div>
-            <Button>Log in</Button>
+            <Link href="/dashboard">
+              <Button>Log in</Button>
+            </Link>
           </div>
         </div>
       </main>
